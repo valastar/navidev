@@ -26,7 +26,7 @@ export default function Portfolio() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Ivan</span>
+                Hi, I&lsquo;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Ivan</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 mb-8">
                 Full Stack Developer crafting digital experiences
@@ -62,8 +62,8 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-white/80 text-lg mb-6">
-                I'm a passionate 17-year-old full-stack developer with a love for creating innovative web applications. 
-                I've been constantly learning and 
+                I&lsquo;m a passionate 17-year-old full-stack developer with a love for creating innovative web applications. 
+                I&lsquo;ve been constantly learning and 
                 building projects that challenge me to grow.
               </p>
               <p className="text-white/80 text-lg mb-6">
@@ -219,9 +219,9 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-8">Let's Work Together</h2>
+          <h2 className="text-4xl font-bold text-white mb-8">Let&lsquo;s Work Together</h2>
           <p className="text-xl text-white/80 mb-12">
-            I'm always open to discussing new opportunities and interesting projects.
+            I&lsquo;m always open to discussing new opportunities and interesting projects.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
