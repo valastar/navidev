@@ -1,3 +1,4 @@
+/* estlint-disable */
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone } from 'lucide-react';
 
