@@ -1,4 +1,6 @@
 /* estlint-disable */
+'use client'
+
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone } from 'lucide-react';
 
@@ -62,18 +64,41 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-white/80 text-lg mb-6">
-                I&lsquo;m a passionate 17-year-old full-stack developer with a love for creating innovative web applications. 
-                I&lsquo;ve been constantly learning and 
+                I&lsquo;m a passionate 17-year-old full-stack developer with a love for creating innovative web applications.
+                I&lsquo;ve been constantly learning and
                 building projects that challenge me to grow.
               </p>
               <p className="text-white/80 text-lg mb-6">
-                I believe in writing clean, efficient code and creating user experiences that are both beautiful and 
-                functional. 
+                I believe in writing clean, efficient code and creating user experiences that are both beautiful and
+                functional.
               </p>
               <div className="flex space-x-4">
-                <Github className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
-                <Linkedin className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
-                <Mail className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+<div className="flex space-x-4">
+  {/* GitHub */}
+  <a
+    href="https://github.com/valastar"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Github className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+  </a>
+
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/tu-usuario/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+  </a>
+
+  {/* Mail (copia al portapapeles) */}
+  <Mail
+    onClick={() => navigator.clipboard.writeText("IEMADEV08@gmail.com")}
+    className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors"
+  />
+</div>
+
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -166,7 +191,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Project Name 1</h3>
                 <p className="text-white/70 mb-4">
-                 Lorem
+                  Lorem
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">React</span>
@@ -194,7 +219,7 @@ export default function Portfolio() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-3">Project Name 2</h3>
                 <p className="text-white/70 mb-4">
-                lorem
+                  lorem
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Next.js</span>
@@ -221,24 +246,45 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-8">Let&lsquo;s Work Together</h2>
           <p className="text-xl text-white/80 mb-12">
-            I&lsquo;m always open to discussing new opportunities and interesting projects.
+            In&lsquo;m always open to discussing new opportunities and interesting projects.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
+            <div
+              onClick={() => navigator.clipboard.writeText("IEMADEV08@gmail.com")}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 cursor-pointer hover:bg-white/10 transition"
+            >
               <Mail className="w-8 h-8 text-white-400 mx-auto mb-4" />
               <h3 className="text-white font-semibold mb-2">Email</h3>
               <p className="text-white/70">IEMADEV08@gmail.com</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
-              <Github className="w-8 h-8 text-white-400 mx-auto mb-4" />
-              <h3 className="text-white font-semibold mb-2">GitHub</h3>
-              <p className="text-white/70">@valastar</p>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
-              <Linkedin className="w-8 h-8 text-white-400 mx-auto mb-4" />
-              <h3 className="text-white font-semibold mb-2">LinkedIn</h3>
-              <p className="text-white/70">Ivan Martinez Aguilar</p>
-            </div>
+
+
+            <a
+              href="https://github.com/valastar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 cursor-pointer hover:bg-white/10 transition">
+                <Github className="w-8 h-8 text-white-400 mx-auto mb-4" />
+                <h3 className="text-white font-semibold mb-2">GitHub</h3>
+                <p className="text-white/70">@valastar</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/iv%C3%A1n-martinez-aguilar-4a4218373/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6">
+                <Linkedin className="w-8 h-8 text-white-400 mx-auto mb-4" />
+                <h3 className="text-white font-semibold mb-2">LinkedIn</h3>
+                <p className="text-white/70">Ivan Martinez Aguilar</p>
+              </div>
+            </a>
           </div>
           <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform">
             Get In Touch
@@ -250,7 +296,7 @@ export default function Portfolio() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-white/10">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-white/60">
-             Ivan Martinez. Built with Next.js and Tailwind CSS.
+            Ivan Martinez. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </footer>
