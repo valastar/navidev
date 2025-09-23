@@ -85,7 +85,7 @@ export default function Portfolio() {
 
   {/* LinkedIn */}
   <a
-    href="https://www.linkedin.com/in/tu-usuario/"
+    href="https://www.linkedin.com/in/iv%C3%A1n-martinez-aguilar-4a4218373/"
     target="_blank"
     rel="noopener noreferrer"
   >
