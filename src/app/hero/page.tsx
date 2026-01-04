@@ -63,62 +63,76 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">About Me</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-white/80 text-lg mb-6">
-                I&lsquo;m a passionate 17-year-old full-stack developer with a love for creating innovative web applications.
-                I&lsquo;ve been constantly learning and
-                building projects that challenge me to grow.
+              <p className="text-white/80 text-xl md:text-2xl mb-6 leading-relaxed">
+                I&lsquo;m a passionate <strong className="text-white"> 17-year-old full-stack developer</strong> with a love for creating innovative <strong className="text-white"> web applications. </strong>
+                I&lsquo;ve been constantly learning and building projects that challenge me to grow.
               </p>
-              <p className="text-white/80 text-lg mb-6">
+
+              <p className="text-white/80 text-xl md:text-2xl mb-6 leading-relaxed">
                 I believe in writing clean, efficient code and creating user experiences that are both beautiful and
                 functional.
               </p>
+
               <div className="flex space-x-4">
-<div className="flex space-x-4">
-  {/* GitHub */}
-  <a
-    href="https://github.com/valastar"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Github className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
-  </a>
+                <div className="flex space-x-4">
+                  {/* GitHub */}
+                  <a
+                    href="https://github.com/valastar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+                  </a>
 
-  {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/iv%C3%A1n-martinez-aguilar-4a4218373/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Linkedin className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
-  </a>
+                  {/* LinkedIn */}
+                  <a
+                    href="https://www.linkedin.com/in/iv%C3%A1n-martinez-aguilar-4a4218373/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors" />
+                  </a>
 
-  {/* Mail (copia al portapapeles) */}
-  <Mail
-    onClick={() => navigator.clipboard.writeText("IEMADEV08@gmail.com")}
-    className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors"
-  />
-</div>
+                  {/* Mail (copia al portapapeles) */}
+                  <Mail
+                    onClick={() => navigator.clipboard.writeText("IEMADEV08@gmail.com")}
+                    className="w-6 h-6 text-white/60 hover:text-white cursor-pointer transition-colors"
+                  />
+                </div>
 
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               {/* Statistics */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">1</h3>
-                <p className="text-white/60">Years Coding</p>
+                {/* Stat Card */}
+                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                    1+
+                  </h3>
+                  <p className="text-sm uppercase tracking-wide text-white/60">
+                    Years Coding
+                  </p>
+                </div>
+
+                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                    3+
+                  </h3>
+                  <p className="text-sm uppercase tracking-wide text-white/60">
+                    Projects Built
+                  </p>
+                </div>
+
+                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                    100%
+                  </h3>
+                  <p className="text-sm uppercase tracking-wide text-white/60">
+                    Passion
+                  </p>
+              
               </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">0</h3>
-                <p className="text-white/60">Lorem</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">0</h3>
-                <p className="text-white/60">Lorem</p>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">100%</h3>
-                <p className="text-white/60">Passion</p>
-              </div>
+
             </div>
           </div>
         </div>
