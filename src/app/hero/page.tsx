@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Globe, Smartphone } from 'lucide-react';
+import Image from "next/image";
 
 export default function Portfolio() {
   return (
@@ -104,33 +105,33 @@ export default function Portfolio() {
             </div>
             <div className="grid grid-cols-3 gap-4">
               {/* Statistics */}
-                {/* Stat Card */}
-                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
-                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
-                    1+
-                  </h3>
-                  <p className="text-sm uppercase tracking-wide text-white/60">
-                    Years Coding
-                  </p>
-                </div>
+              {/* Stat Card */}
+              <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                  1+
+                </h3>
+                <p className="text-sm uppercase tracking-wide text-white/60">
+                  Years Coding
+                </p>
+              </div>
 
-                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
-                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
-                    3+
-                  </h3>
-                  <p className="text-sm uppercase tracking-wide text-white/60">
-                    Projects Built
-                  </p>
-                </div>
+              <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                  3+
+                </h3>
+                <p className="text-sm uppercase tracking-wide text-white/60">
+                  Projects Built
+                </p>
+              </div>
 
-                <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
-                  <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
-                    100%
-                  </h3>
-                  <p className="text-sm uppercase tracking-wide text-white/60">
-                    Passion
-                  </p>
-              
+              <div className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 text-center transition hover:bg-white/10">
+                <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-400 transition">
+                  100%
+                </h3>
+                <p className="text-sm uppercase tracking-wide text-white/60">
+                  Passion
+                </p>
+
               </div>
 
             </div>
@@ -198,56 +199,63 @@ export default function Portfolio() {
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Project 1 */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform">
-              <div className="h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-                <span className="text-white font-semibold">Project Screenshot 1</span>
+                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform">
+              <div className="h-48 relative overflow-hidden rounded-t-xl">
+                <Image
+                  src="/projects/qg.png"
+                  alt="Project Screenshot 2"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">Project Name 1</h3>
-                <p className="text-white/70 mb-4">
-                  Lorem
-                </p>
+                <h3 className="text-xl font-semibold text-white mb-3">QuickGrowth</h3>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">React</span>
-                  <span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Node.js</span>
-                  <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Next.js</span>
+                  <span className="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm">TypeScript</span>
                 </div>
                 <div className="flex space-x-4">
-                  <button className="flex items-center text-white/80 hover:text-white transition-colors">
+                  <a
+                    href="https://qg-page.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-white/80 hover:text-white transition-colors"
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
-                  </button>
-                  <button className="flex items-center text-white/80 hover:text-white transition-colors">
-                    <Github className="w-4 h-4 mr-2" />
-                    Source Code
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
 
             {/* Project 2 */}
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center">
-                <span className="text-white font-semibold">Project Screenshot 2</span>
+
+              <div className="h-48 relative overflow-hidden rounded-t-xl">
+                <Image
+                  src="/projects/bluekeys.png"
+                  alt="Project Screenshot 1"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-3">Project Name 2</h3>
-                <p className="text-white/70 mb-4">
-                  lorem
-                </p>
+                <h3 className="text-xl font-semibold text-white mb-3">Blue Keys</h3>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">Next.js</span>
-                  <span className="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">React</span>
+                  <span className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">Node.js</span>
                 </div>
                 <div className="flex space-x-4">
-                  <button className="flex items-center text-white/80 hover:text-white transition-colors">
+                  <a
+                    href="https://blue-keys.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-white/80 hover:text-white transition-colors"
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Live Demo
-                  </button>
-                  <button className="flex items-center text-white/80 hover:text-white transition-colors">
-                    <Github className="w-4 h-4 mr-2" />
-                    Source Code
-                  </button>
+                  </a>
+
                 </div>
               </div>
             </div>
